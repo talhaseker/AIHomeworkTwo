@@ -1,30 +1,15 @@
-/**
- * Created by talhaseker on 22.02.2018.
- */
+public class TransportationActionSoldiers {
 
-import utility.Action;
-
-
-public class TransportationActionSoldiers implements Action {
-
-    private int [] action;
+    private int nSoldiers, nBoys;
 
     public TransportationActionSoldiers(int nSoldiers, int nBoys){
-        action = new int[2];
-        action[0] = nSoldiers;
-        action[1] = nBoys;
+        this.nSoldiers = nSoldiers;
+        this.nBoys = nBoys;
     }
 
-    public int getNumSoldiers(){
-        return action[0];
-    }
+    public int getNumSoldiers(){ return nSoldiers; }
 
-    public int getNumBoys(){
-        return action[1];
-    }
+    public int getNumBoys(){ return nBoys; }
 
-    public String toString(){
-        return action[0]+"S,"+action[1]+"B";
-    }
-
+    public String toString(){ return nSoldiers + " S," + nBoys + " B"; }
 }
